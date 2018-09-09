@@ -11,7 +11,7 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty." 
   else
-    current_line = katz_deli.collect{|guest, i| "#{i}. #{guest}"}
+    current_line = katz_deli.collect{|guest, i| "#{katz_deli.index(guest)+1}. #{guest}"}
     puts "The line is currently: #{current_line.join(" ")}"
   end
 end
